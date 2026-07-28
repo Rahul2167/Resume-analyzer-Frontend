@@ -1,0 +1,265 @@
+/* ===========================
+   PAGE CONTENT
+=========================== */
+
+.page-content{
+    flex:1;
+    padding:40px;
+    color:white;
+}
+
+.page-content h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.page-content p{
+    color:#94a3b8;
+    margin-bottom:30px;
+}
+
+
+/* ===========================
+   GLASS CARD
+=========================== */
+
+.glass-card{
+    max-width:900px;
+    padding:35px;
+    border-radius:25px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    margin-bottom:25px;
+}
+
+
+/* ===========================
+   LABELS
+=========================== */
+
+.glass-card label{
+    display:block;
+    margin-top:20px;
+    margin-bottom:10px;
+    font-weight:600;
+    color:white;
+}
+
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.glass-card input,
+.glass-card textarea,
+.glass-card select{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #374151;
+
+    border-radius:15px;
+
+    outline:none;
+
+    background:#1f2937;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+
+/* Placeholder */
+
+.glass-card input::placeholder,
+.glass-card textarea::placeholder{
+    color:#9ca3af;
+}
+
+
+/* ===========================
+   SELECT FIX
+=========================== */
+
+.glass-card select{
+
+    appearance:none;
+
+    cursor:pointer;
+
+}
+
+.glass-card select option{
+
+    background:white;
+
+    color:black;
+
+}
+
+
+/* ===========================
+   TEXTAREA
+=========================== */
+
+.glass-card textarea{
+    resize:none;
+}
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.primary-btn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.3);
+
+}
+
+
+/* ===========================
+   RESULT CARDS
+=========================== */
+
+.glass-card h2{
+
+    color:#60a5fa;
+
+    margin-bottom:10px;
+
+}
+
+.glass-card h3{
+
+    margin:10px 0;
+
+    color:white;
+
+}
+
+.glass-card p{
+
+    color:#d1d5db;
+
+    margin:6px 0;
+
+}
+
+.glass-card ul{
+
+    margin-top:10px;
+
+    padding-left:20px;
+
+}
+
+.glass-card li{
+
+    margin-bottom:8px;
+
+    color:#e5e7eb;
+
+    line-height:1.6;
+
+}
+
+.glass-card a{
+
+    text-decoration:none;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .page-content{
+        padding:20px;
+    }
+
+    .glass-card{
+        padding:20px;
+    }
+
+    .page-content h1{
+        font-size:28px;
+    }
+
+}
+.page-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.glass-card {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(12px);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
