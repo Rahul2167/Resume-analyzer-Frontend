@@ -54,7 +54,7 @@ export default function Hero() {
 
           <button
             className="secondary-btn"
-            onClick={scrollToFeatures}
+            onClick={() => navigate("/dashboard")}
           >
             <FaPlayCircle />
             Explore Features
