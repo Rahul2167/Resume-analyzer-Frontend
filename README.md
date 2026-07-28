@@ -28,13 +28,13 @@ Project Live Link : https://resume-analyzer-ai2026.vercel.app
 
 > An AI-powered career preparation platform that brings Resume Analysis, Mock Interviews, Resume Builder, Career Roadmaps, Skill Gap Analysis, LinkedIn Optimization, and AI Career Guidance into one unified application.
 
-![Java](https://img.shields.io/badge/Java-17-orange)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
-![React](https://img.shields.io/badge/React-18-blue)
+![Java](https://img.shields.io/badge/Java-21-orange)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-brightgreen)
+![React](https://img.shields.io/badge/React-blue)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
 ![JWT](https://img.shields.io/badge/JWT-Security-green)
 ![Docker](https://img.shields.io/badge/Docker-Container-blue)
-![AWS](https://img.shields.io/badge/AWS-EC2-orange)
+![AWS](https://img.shields.io/badge/Render-orange)
 ![Gemini AI](https://img.shields.io/badge/Gemini-AI-purple)
 
 ---
