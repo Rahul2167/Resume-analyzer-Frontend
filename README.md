@@ -22,3 +22,463 @@ Project Live Link : https://resume-analyzer-ai2026.vercel.app
 <img width="1917" height="1021" alt="Screenshot 2026-07-23 025751" src="https://github.com/user-attachments/assets/92fb8347-30b3-4fc9-9c4d-ddf517660ae4" />
 <img width="1917" height="1020" alt="Screenshot 2026-07-23 025809" src="https://github.com/user-attachments/assets/d65752e0-789d-48a5-89d5-c5493844fda9" />
 <img width="1917" height="1022" alt="Screenshot 2026-07-23 025800" src="https://github.com/user-attachments/assets/f96cad4a-d360-41b2-a123-7b4a27685054" />
+
+
+# 🚀 Career Ascent AI
+
+> An AI-powered career preparation platform that brings Resume Analysis, Mock Interviews, Resume Builder, Career Roadmaps, Skill Gap Analysis, LinkedIn Optimization, and AI Career Guidance into one unified application.
+
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
+![React](https://img.shields.io/badge/React-18-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![JWT](https://img.shields.io/badge/JWT-Security-green)
+![Docker](https://img.shields.io/badge/Docker-Container-blue)
+![AWS](https://img.shields.io/badge/AWS-EC2-orange)
+![Gemini AI](https://img.shields.io/badge/Gemini-AI-purple)
+
+---
+
+# 📌 Overview
+
+Career Ascent AI is an AI-powered career development platform designed to simplify job preparation by combining multiple career tools into a single application.
+
+Instead of switching between different websites for resume analysis, interview preparation, resume building, career guidance, LinkedIn optimization, and learning roadmaps, users can access everything from one dashboard.
+
+The platform leverages Google's Gemini AI to provide personalized recommendations, resume feedback, mock interviews, skill analysis, and intelligent career guidance.
+
+---
+
+# ❓ Why I Built This Project
+
+While preparing for software engineering interviews, I realized that career preparation is highly fragmented.
+
+For every task, I had to use different platforms:
+
+- Resume Analysis
+- ATS Score Checking
+- Mock Interviews
+- Resume Builder
+- Career Roadmaps
+- LinkedIn Optimization
+- AI Career Guidance
+
+Managing multiple platforms was time-consuming and inconvenient.
+
+To solve this problem, I built **Career Ascent AI**, an all-in-one AI-powered platform where users can prepare for their careers from one place.
+
+---
+
+# 🎯 Problem Statement
+
+Career preparation today is scattered across multiple applications.
+
+Users often need to:
+
+- Build resumes on one website
+- Practice interviews on another
+- Analyze resumes elsewhere
+- Learn skills from another platform
+- Seek career guidance separately
+
+This leads to:
+
+- Poor user experience
+- Lack of personalized guidance
+- Wasted time
+- Multiple subscriptions
+
+Career Ascent AI solves this by providing a centralized AI ecosystem for career growth.
+
+---
+
+# ✨ Features
+
+## 🔐 Authentication
+
+- Secure JWT Authentication
+- Google OAuth Login
+- Email & Password Login
+- Role-Based Authorization
+- Password Encryption using BCrypt
+
+---
+
+## 📊 AI Resume Analyzer
+
+Upload your resume and paste the Job Description.
+
+The AI performs:
+
+- ATS Score Analysis
+- Resume Match Score
+- Missing Skills Detection
+- Resume Improvement Suggestions
+- Strengths & Weaknesses Analysis
+- Personalized Feedback
+
+---
+
+## 🎤 AI Voice Mock Interview
+
+Practice interviews powered by AI.
+
+Features include:
+
+- Multiple Job Roles
+- Difficulty Selection
+- Dynamic Interview Questions
+- AI-generated Feedback
+- Confidence Building
+- Interview Performance Analysis
+
+---
+
+## 📄 Resume Builder
+
+Create professional ATS-friendly resumes.
+
+Features:
+
+- Multiple Resume Templates
+- Live Preview
+- Professional Formatting
+- PDF Download
+- ATS Optimized Layout
+
+---
+
+## 💼 LinkedIn Optimizer
+
+Improve your professional online presence.
+
+Includes:
+
+- LinkedIn Profile Tips
+- Headline Suggestions
+- About Section Guidance
+- Recruiter Visibility Tips
+- Profile Optimization Best Practices
+
+---
+
+## 🛣 Career Roadmaps
+
+Explore structured learning paths for:
+
+- Java Developer
+- Full Stack Developer
+- Cloud Engineer
+- DevOps Engineer
+- Data Scientist
+- Cybersecurity Engineer
+- AI/ML Engineer
+- Frontend Developer
+- Backend Developer
+- Android Developer
+- and many more...
+
+Each roadmap includes:
+
+- Technologies
+- Learning Sequence
+- Skills Required
+- Career Progression
+
+---
+
+## 📈 Skill Gap Analysis
+
+Analyze current skills against industry expectations.
+
+The system identifies:
+
+- Missing Skills
+- High Priority Skills
+- Medium Priority Skills
+- Low Priority Skills
+- Learning Recommendations
+
+---
+
+## 🤖 AI Career Chat
+
+24×7 AI Career Assistant powered by Gemini.
+
+Ask questions about:
+
+- Resume Improvement
+- Career Guidance
+- Salary Negotiation
+- Interview Preparation
+- Programming
+- System Design
+- Learning Resources
+
+---
+
+## 👤 Profile Management
+
+Users can:
+
+- Update Profile
+- Change Password
+- View Subscription
+- Purchase Premium
+- View Purchase History
+
+---
+
+## 💳 Premium Membership
+
+Integrated with Razorpay.
+
+Premium unlocks:
+
+- Unlimited Resume Analysis
+- Unlimited Mock Interviews
+- Premium AI Features
+- Priority Access
+
+---
+
+## 🛠 Admin Panel
+
+Secure Admin Dashboard
+
+Manage:
+
+- Users
+- Premium Members
+- Authentication
+- Platform Monitoring
+
+---
+
+# 🏗 System Architecture
+
+```
+                    React Frontend
+
+                           │
+
+                   REST API (HTTPS)
+
+                           │
+
+                Spring Boot Backend
+
+        ┌─────────────────────────────────┐
+        │ Spring Security                 │
+        │ JWT Authentication              │
+        │ Resume Service                  │
+        │ Interview Service               │
+        │ AI Chat Service                 │
+        │ Payment Service                 │
+        │ Career Roadmap Service          │
+        └─────────────────────────────────┘
+
+             │                     │
+
+       PostgreSQL Database    Gemini AI API
+
+                     │
+
+           Docker + AWS EC2 + Render
+```
+
+---
+
+# ⚙️ Tech Stack
+
+## Frontend
+
+- React.js
+- React Router
+- Axios
+- Tailwind CSS
+- Material UI
+
+---
+
+## Backend
+
+- Java 21
+- Spring Boot
+- Spring Security
+- Spring Data JPA
+- Hibernate
+- REST APIs
+
+---
+
+## Database
+
+- PostgreSQL
+- Supabase
+
+---
+
+## AI
+
+- Google Gemini AI API
+- Grok API
+- Openrouter API
+
+---
+
+## Authentication
+
+- JWT
+- Google OAuth
+
+---
+
+## Payment
+
+- Razorpay
+
+---
+
+## Deployment
+
+- Docker
+- AWS EC2
+- Render
+
+---
+
+## Version Control
+
+- Git
+- GitHub
+
+---
+
+# 📂 Project Structure
+
+```
+career-ascent-ai/
+
+│
+
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── hooks/
+│   └── assets/
+
+│
+
+├── backend/
+│   ├── controller/
+│   ├── service/
+│   ├── repository/
+│   ├── model/
+│   ├── dto/
+│   ├── config/
+│   ├── security/
+│   └── util/
+
+│
+
+├── database/
+
+├── docker/
+
+└── README.md
+```
+
+---
+
+# 🔄 Application Workflow
+
+1. User Registers/Login
+2. JWT Authentication
+3. Access Dashboard
+4. Choose AI Module
+5. Backend Processes Request
+6. Gemini AI Generates Response
+7. Backend Returns Response
+8. Frontend Displays Results
+
+---
+
+# 🔒 Security Features
+
+- JWT Authentication
+- BCrypt Password Encryption
+- Role-Based Access Control
+- Spring Security
+- Input Validation
+- Secure REST APIs
+- CORS Configuration
+
+---
+
+# 🚀 Future Improvements
+
+- Voice-to-Voice Interview
+- Resume Auto Correction
+- AI Job Recommendation
+- Resume Version History
+- Multi-language Support
+- AI Interview Scoring
+- Company-specific Interview Preparation
+- Email Notifications
+- Analytics Dashboard
+
+---
+
+# 📈 Project Highlights
+
+- AI-powered Career Platform
+- Production-style Full Stack Application
+- Secure Authentication
+- Responsive UI
+- RESTful Architecture
+- Dockerized Deployment
+- Cloud Hosted
+- Scalable Design
+
+---
+
+# 💡 Key Learnings
+
+Through this project, I gained hands-on experience with:
+
+- Full Stack Development
+- REST API Design
+- Spring Security
+- JWT Authentication
+- AI Integration
+- PostgreSQL
+- Docker
+- AWS Deployment
+- Prompt Engineering
+- Secure Application Development
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+Feel free to fork the repository, raise issues, or submit pull requests to improve the project.
+
+---
+
+# 📬 Contact
+
+**Developer:** Rahul Potdar
+
+LinkedIn: https://www.linkedin.com/in/rahul-potdar-rp2167
+
+Email: rahulpotdar2167@gmail.com
+
+Portfolio: https://myportfolio2167.vercel.app
+
+---
+
+⭐ If you found this project useful, don't forget to give it a Star!
