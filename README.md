@@ -473,12 +473,6 @@ Feel free to fork the repository, raise issues, or submit pull requests to impro
 
 **Developer:** Rahul Potdar
 
-LinkedIn: https://www.linkedin.com/in/rahul-potdar-rp2167
-
-Email: rahulpotdar2167@gmail.com
-
-Portfolio: https://myportfolio2167.vercel.app
-
 ---
 
 ⭐ If you found this project useful, don't forget to give it a Star!
