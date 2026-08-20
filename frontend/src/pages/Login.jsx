@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn, FaEnvelope, FaLock, FaUser, FaArrowLeft } from "react-icons/fa";
+import { useBackendStatus } from "../context/BackendStatusContext";
 import "./Login.css";
 
 const API_URL = import.meta.env.VITE_API_URL || "https://resume-analyzer-jwtj.onrender.com/api";
@@ -8,6 +9,7 @@ const API_URL = import.meta.env.VITE_API_URL || "https://resume-analyzer-jwtj.on
 export default function Login() {
   const [isPanelActive, setIsPanelActive] = useState(false);
   const [signUpSuccess, setSignUpSuccess] = useState("");
+  const { triggerApiStart } = useBackendStatus();
   
   // Form states
   const [signUpName, setSignUpName] = useState("");
@@ -232,7 +234,7 @@ export default function Login() {
       <button 
         onClick={() => navigate("/dashboard")} 
         style={{ 
-          position: "absolute", top: "25px", left: "25px", background: "rgba(255,255,255,0.15)",
+          position: "absolute", top: "20px", left: "25px", background: "rgba(255,255,255,0.15)",
           color: "white", padding: "10px 18px", borderRadius: "20px", display: "flex", alignItems: "center",
           gap: "8px", border: "none", fontSize: "13px", zIndex: 9999, cursor: "pointer"
         }}

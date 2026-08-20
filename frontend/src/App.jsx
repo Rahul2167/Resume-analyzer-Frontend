@@ -26,6 +26,9 @@ import Profile from "./pages/Profile";
 import Admin from "./pages/Admin";
 import FloatingChat from "./components/FloatingChat";
 
+import HeaderDisclaimer from "./components/HeaderDisclaimer";
+import { BackendStatusProvider } from "./context/BackendStatusContext";
+
 // Redirects to /login only when not logged in
 function ProtectedRoute({ children }) {
   const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
@@ -40,36 +43,39 @@ function ProtectedRoute({ children }) {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <BackendStatusProvider>
+      <BrowserRouter>
+        <HeaderDisclaimer />
+        <Routes>
 
-        {/* ── PUBLIC — no login needed ── */}
-        <Route path="/" element={<Landing />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/chat" element={<AiChat />} />
-        <Route path="/linkedin" element={<LinkedInOptimizer />} />
-        <Route path="/roadmap" element={<CareerRoadmap />} />
-        <Route path="/skill-gap" element={<SkillGap />} />
-        <Route path="/cover-letter" element={<CoverLetter />} />
+          {/* ── PUBLIC — no login needed ── */}
+          <Route path="/" element={<Landing />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/chat" element={<AiChat />} />
+          <Route path="/linkedin" element={<LinkedInOptimizer />} />
+          <Route path="/roadmap" element={<CareerRoadmap />} />
+          <Route path="/skill-gap" element={<SkillGap />} />
+          <Route path="/cover-letter" element={<CoverLetter />} />
 
-        {/* ── PROTECTED — login required when clicking these ── */}
-        <Route path="/resume"          element={<ProtectedRoute><ResumeAnalyzer /></ProtectedRoute>} />
-        <Route path="/mock-interview"  element={<ProtectedRoute><MockInterview /></ProtectedRoute>} />
-        <Route path="/resume-builder"  element={<ProtectedRoute><ResumeBuilder /></ProtectedRoute>} />
-        <Route path="/profile"         element={<ProtectedRoute><Profile /></ProtectedRoute>} />
-        <Route path="/admin"           element={<ProtectedRoute><Admin /></ProtectedRoute>} />
-        <Route path="/settings"        element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+          {/* ── PROTECTED — login required when clicking these ── */}
+          <Route path="/resume"          element={<ProtectedRoute><ResumeAnalyzer /></ProtectedRoute>} />
+          <Route path="/mock-interview"  element={<ProtectedRoute><MockInterview /></ProtectedRoute>} />
+          <Route path="/resume-builder"  element={<ProtectedRoute><ResumeBuilder /></ProtectedRoute>} />
+          <Route path="/profile"         element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+          <Route path="/admin"           element={<ProtectedRoute><Admin /></ProtectedRoute>} />
+          <Route path="/settings"        element={<ProtectedRoute><Settings /></ProtectedRoute>} />
 
-        {/* ── Catch-all → Dashboard ── */}
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+          {/* ── Catch-all → Dashboard ── */}
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
 
-      </Routes>
-      <FloatingChat />
-    </BrowserRouter>
+        </Routes>
+        <FloatingChat />
+      </BrowserRouter>
+    </BackendStatusProvider>
   );
 }
 
