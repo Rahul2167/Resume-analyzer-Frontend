@@ -43,6 +43,15 @@ export default function Hero() {
           land your dream job — all from one AI-powered platform.
         </p>
 
+        {/* Robot Image on Mobile (positioned right above buttons) */}
+        <div className="robot-mobile-wrapper">
+          <img
+            src={robot}
+            alt="AI Robot"
+            className="robot-image-mobile"
+          />
+        </div>
+
         <div className="hero-buttons">
           <button
             className="primary-btn"

@@ -2896,3 +2896,156 @@ body.light-theme .nav-signin-btn:hover {
     display: none !important;
   }
 }
+
+.robot-mobile-wrapper {
+  display: none;
+}
+
+/* ========================================================
+   PROFESSIONAL MOBILE RESPONSIVE DESIGN & ALIGNMENT
+======================================================== */
+@media (max-width: 768px) {
+  /* Navbar Mobile Layout */
+  .navbar {
+    padding: 12px 16px !important;
+    gap: 8px !important;
+  }
+
+  .logo {
+    gap: 8px !important;
+  }
+
+  .logo-icon {
+    font-size: 26px !important;
+  }
+
+  .logo h2 {
+    font-size: 16.5px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    white-space: nowrap !important;
+  }
+
+  .logo span {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .nav-right {
+    gap: 8px !important;
+  }
+
+  .nav-signin-btn {
+    padding: 7px 16px !important;
+    font-size: 12.5px !important;
+    white-space: nowrap !important;
+    border-radius: 20px !important;
+  }
+
+  /* Hero Section Mobile Layout */
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 24px 18px 44px !important;
+    min-height: auto !important;
+    gap: 16px !important;
+    position: relative !important;
+  }
+
+  .hero-left {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .tag {
+    font-size: 12.5px !important;
+    padding: 7px 16px !important;
+    margin-bottom: 18px !important;
+    border-radius: 50px !important;
+    background: rgba(59, 130, 246, 0.12) !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(26px, 7vw, 34px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 20px !important;
+    max-width: 100% !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.3px !important;
+  }
+
+  .hero p {
+    font-size: 14.5px !important;
+    line-height: 1.65 !important;
+    color: #cbd5e1 !important;
+    margin-bottom: 20px !important;
+    max-width: 100% !important;
+    padding: 0 4px !important;
+  }
+
+  .hero-right {
+    display: none !important;
+  }
+
+  .robot-mobile-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 4px 0 22px !important;
+  }
+
+  .robot-image-mobile {
+    width: 175px !important;
+    max-width: 60% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    filter: drop-shadow(0 0 25px rgba(59, 130, 246, 0.55)) !important;
+    animation: float 4s ease-in-out infinite !important;
+  }
+
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    gap: 12px !important;
+  }
+
+  .primary-btn, .secondary-btn {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 13px 20px !important;
+    font-size: 14.5px !important;
+    font-weight: 700 !important;
+    border-radius: 14px !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Floating Chatbot Widget on Mobile */
+  .chatbot-button {
+    bottom: 18px !important;
+    right: 14px !important;
+  }
+
+  .floating-robot-icon {
+    font-size: 44px !important;
+  }
+
+  .robot-text, [class*="robot-text"], [class*="chat-bubble"] {
+    display: none !important; /* hide speech bubble on mobile to avoid overlapping content */
+  }
+}
